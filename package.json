@@ -1,0 +1,37 @@
+{
+  "name": "mutant-meli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jbuitrago/mutant-meli.git",
+  "author": "Jorge Buitrago",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "dev": "nodemon src/index.js --exec babel-node",
+    "start": "node dist/index.js ",
+    "test": "mocha",
+    "lint": "eslint .",
+    "startdb":"node startdb.js"
+  },
+  "dependencies": {
+    "@babel/node": "^7.10.1",
+    "@babel/polyfill": "^7.10.1",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mocha": "^7.2.0",
+    "mongodb": "^3.5.8",
+    "mongoose": "^5.9.17",
+    "node-fetch": "^2.6.0",
+    "request": "^2.88.2",
+    "should": "^13.2.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.1",
+    "@babel/preset-env": "^7.10.1",
+    "eslint": "^7.1.0",
+    "nodemon": "^2.0.4"
+  }
+}

@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "97f43739-b077-4e4b-b22a-6d604c067636",
+		"name": "Mutantes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST mutant",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7dfaca24-7b89-4db6-8a63-13b1950e8098",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n\"dna\":[\"TAAT\",\r\n       \"AGTA\",\r\n       \"TGAT\",\r\n       \"AGTT\"]\r\n \t\r\n } \r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://app-mutant-meli.herokuapp.com/api/v1/mutant",
+					"protocol": "https",
+					"host": [
+						"app-mutant-meli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"mutant"
+					]
+				},
+				"description": "tasks"
+			},
+			"response": []
+		},
+		{
+			"name": "GET stats",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://app-mutant-meli.herokuapp.com/api/v1/stats",
+					"protocol": "https",
+					"host": [
+						"app-mutant-meli",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
